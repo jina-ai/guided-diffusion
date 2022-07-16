@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="guided-diffusion",
+    name="guided_diffusion_sdk",
     version='1.0.0',
     packages=find_packages(),
     include_package_data=True,
