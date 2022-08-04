@@ -880,6 +880,8 @@ class GaussianDiffusion:
             my_t = th.ones([shape[0]], device=device, dtype=th.long) * indices[0]
             img = self.q_sample(init_image, my_t, img)
 
+        print(f'init_image {init_image.shape}, img {img.shape}')
+
         if progress:
             # Lazy import so that we don't depend on tqdm.
             from tqdm.auto import tqdm
